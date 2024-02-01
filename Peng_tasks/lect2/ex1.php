@@ -33,7 +33,7 @@ echo"Hello world!My name is \"David\"";
     <?php
     $g1=5;
     $g2=4;
-    $G3=5;
+    $g3=5;
     ?>
 <table>
 <tr><th>S.n.</th>   <th>Name</th> <th> Grade </th>

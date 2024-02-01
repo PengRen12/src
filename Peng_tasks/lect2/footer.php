@@ -2,7 +2,7 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <style>
         
 
@@ -38,6 +38,11 @@
                 <a href="#">Terms of Use</a> | 
                 <a href="#">Contact Us</a>
             </p>
+           <?php
+            $filename = basename($_SERVER['SCRIPT_FILENAME']);
+             $filemodtime = filemtime($filename);
+             echo "<p>Last modified: " . date("F d Y H:i:s.", $filemodtime) . "</p>";
+?>
         </div>
     </footer>
 

@@ -10,7 +10,7 @@
     <!-- Custom CSS for Cyberpunk Style -->
     <style>
         body {
-            background-color: #111; /* Dark background */
+            background-color:#354347    ; /* Dark background */
             color: #fff;
             font-family: 'Orbitron', sans-serif; /* Futuristic font */
         }
@@ -20,7 +20,7 @@
             border-bottom: 3px solid #f50057; /* Neon Pink */
         }
 
-        .navbar-brand, .nav-link {
+        .navbar-brand, .nav-link {S
             color: #8bc34a; /* Neon Green */
         }
 
@@ -57,7 +57,10 @@
           <a class="nav-link" href="layout.php">Task2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link2</a>
+          <a class="nav-link" href="ex3.php">Task3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ex4.php">Task4</a>
         </li>
       </ul>
     </div>

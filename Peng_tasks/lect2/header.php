@@ -62,6 +62,12 @@
         <li class="nav-item">
           <a class="nav-link" href="ex4.php">Task4</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="README.md">Task5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Task7</a>
+        </li>
       </ul>
     </div>
   </div>

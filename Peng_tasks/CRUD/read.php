@@ -1,6 +1,5 @@
 <?php
 include 'db.php';
-include 'header.php';
 // SQL query to retrieve data from the 'studentsinfo' table
 $sql = "SELECT * FROM studentsinfo";
 
@@ -37,7 +36,6 @@ if ($result->num_rows > 0) {
     // Display a message if no results are found
     echo "No results";
 }
-include 'footer.php';
 // close the connection when done
 $conn->close();
 ?>

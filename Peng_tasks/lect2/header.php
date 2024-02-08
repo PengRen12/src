@@ -68,6 +68,9 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php">Task7</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="read.php">Task7(2)</a>
+        </li>
       </ul>
     </div>
   </div>

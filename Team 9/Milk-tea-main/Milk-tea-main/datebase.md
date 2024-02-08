@@ -16,6 +16,12 @@ CREATE TABLE `memberInfo` (
 
 # table2 : Zhenliang Hao
 # Feature 2 : Feedback and suggestions
+CREATE TABLE `Feedback and suggestions` (
+  `id` int NOT NULL,
+  `Date` int NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `Phone Number` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CO
 
 
 

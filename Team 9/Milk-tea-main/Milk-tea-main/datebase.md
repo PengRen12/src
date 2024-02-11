@@ -36,7 +36,8 @@ CREATE TABLE `orderonline` (
   `phone_number` varchar(50) NOT NULL,
   `beverage_item` varchar(50) NOT NULL,
   `sugar` varchar(50) NOT NULL,
-  `temperature` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+  `temperature` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `payment_method` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 

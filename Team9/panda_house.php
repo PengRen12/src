@@ -6,17 +6,7 @@
 <link rel="stylesheet" href="styles copy.css">
 <title>Panda House - Fresh Beverages</title>
 </head>
-<body>
-  <header>
-    <div class="navbar">
-        <div class="logo">
-          <img src="image/logo2.png" alt="logo">
-        </div>
-        <div class="nav-links">
-          <a href="p.html" class="active">HOME</a>
-          <a href="#menu">MENU</a>
-          <a href="#visit">VISIT US</a>
-          <a href="#connect" class="connect-button">CONNECT US</a>
+<?php require_once 'header.php'; ?>
         </div>
       </div>
       
@@ -38,23 +28,12 @@
     </div>
 </main>
 <footer>
-    <footer class="footer">
-        <div class="footer-content">
-
-
-          <a href="#instagram"><img src="image/INS.png" alt="Instagram"></a>
-          <nav class="footer-nav">
-            <a href="#app">APP</a>
-            <a href="#address">ADDRESS</a>
-            <a href="#policy">POLICY</a>
-            <a href="#careers">CAREERS</a>
-            <a href="#terms">TERMS&CONDITIONS</a>
-        
+<?php require_once 'footer.php'; ?>
           </nav>
       
             
     
-          <p class="copyright-text">&copy;2024 Panda Fresh Milk & Tea - All Rights Reserved</p>
+         
         </div>
       </footer>
       

@@ -19,6 +19,7 @@
             <a href="#connect" class="connect-button">CONNECT US</a>
             <li class="nav-item">
           <a class="nav-link" href="panda_house.php">Link</a>
+          <a class="nav-link" href="feature3_orderonline.php">Orderonline</a>
         </li>
         </div>
 

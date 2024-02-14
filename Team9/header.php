@@ -16,10 +16,10 @@
             <a href="p.php" class="active">HOME</a>
             <a href="p.php">MENU</a>
             <a href="panda_house.php">VISIT US</a>
-            <a href="connet/index.php">CONNECT US</a>
-            <a href="l.php" >Link</a>
-         
-      
+            <a href="#connect" class="connect-button">CONNECT US</a>
+            <li class="nav-item">
+          <a class="nav-link" href="panda_house.php">Link</a>
+        </li>
         </div>
 
         <style>

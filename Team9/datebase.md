@@ -5,8 +5,14 @@ CREATE TABLE `memberInfo` (
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `birth` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `birth` varchar(50) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  `gender` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+ALTER TABLE `memberInfo`
+  ADD PRIMARY KEY (`id`);
+COMMIT;
 
 
 

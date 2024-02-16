@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us</title>
 <style>
-    body {
+   body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -21,13 +21,22 @@
         border: 1px solid #dddddd;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-   
-    input, textarea {
-        width: 100%;
+    h1 {
+        font-size: 68px; /* Increase font size */
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 22px); /* Adjusting width to account for padding */
         padding: 10px;
         margin-top: 5px;
         margin-bottom: 20px;
         border: 1px solid #dddddd;
+        border-radius: 5px; /* Adding border radius */
+    }
+    p{
+     font-size:20px;
+
     }
     button {
         width: 100%;
@@ -39,6 +48,11 @@
     }
     button:hover {
         background-color: #555;
+    }
+    /* Confirmation message styling */
+    .confirmation {
+        color: green;
+        margin-top: 10px;
     }
 </style>
 </head>
@@ -65,6 +79,28 @@
         <button type="submit">Send</button>
     </form>
 </div>
+<script>
+    // Form Validation Function
+    function validateForm() {
+        var firstName = document.getElementById('first_name').value;
+        var lastName = document.getElementById('last_name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        if (firstName.trim() == '' || lastName.trim() == '' || email.trim() == '' || message.trim() == '') {
+            alert('Please fill out all required fields.');
+            return false;
+        }
+
+        showConfirmation(); // Call confirmation message function if form is valid
+        return true;
+    }
+
+    // Confirmation Message Function
+    function showConfirmation() {
+        document.getElementById('confirmation').style.display = 'block';
+    }
+</script>
 <?php require_once 'footer.php'; ?>
 </body>
 </html>

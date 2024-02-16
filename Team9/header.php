@@ -16,9 +16,8 @@
             <a href="p.php" class="active">HOME</a>
             <a href="p.php">MENU</a>
             <a href="panda_house.php">VISIT US</a>
-            <a href="#connect" class="connect-button">CONNECT US</a>
-            <li class="nav-item">
-          <a class="nav-link" href="panda_house.php">Link</a>
+            <a href="recu.php" >Recruit</a>
+          
           <a class="nav-link" href="feature3_orderonline.php">Orderonline</a>
         </li>
         </div>

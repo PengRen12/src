@@ -47,10 +47,13 @@ CREATE TABLE `orderonline` (
 # table4 : Peng Ren
 # Feature4 : Recruitment information
 
-CREATE TABLE `Recruitment` (
+CREATE TABLE `job_applications` (
   `id` int NOT NULL,
+  `email` varchar(255) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `country_code` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `phone_number` varchar(20) NOT NULL,
+  `country` varchar(50) NOT NULL,
+  `gender` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;

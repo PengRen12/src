@@ -1,8 +1,8 @@
 <?php
-$severname = "web-dev-env-main-db-1";
-$username = "app1";
-$password = "password";
-$dbname = "app1";
+$severname = "localhost";
+$username = "xiaomeng23000";
+$password = "0xPLXNK7";
+$dbname = "wp_xiaomeng23000";
 
 
 //create database connection

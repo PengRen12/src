@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
 // Define $products array
 $products = [
     1 => ['name' => 'Strawberry milk tea', 'price' => 5, 'category' => 'tea'],
@@ -18,13 +20,13 @@ $products = [
 include 'feature3_db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve data from the form
-    $fname = $_POST['fname'];           // First name
-    $lname = $_POST['lname'];           // Last name
-    $phone = $_POST['phone'];           // Phone number
-    $email = $_POST['email'];           // Email address
-    $address = $_POST['address'];       // Address
-    $payment_method = $_POST['payment_method']; // Payment method
+    // Retrieve data from the form and sanitize
+    $fname = mysqli_real_escape_string($conn, $_POST['fname']);           // First name
+    $lname = mysqli_real_escape_string($conn, $_POST['lname']);           // Last name
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);           // Phone number
+    $email = mysqli_real_escape_string($conn, $_POST['email']);           // Email address
+    $address = mysqli_real_escape_string($conn, $_POST['address']);       // Address
+    $payment_method = mysqli_real_escape_string($conn, $_POST['payment_method']); // Payment method
     
     // Calculate total amount
     $total = 0;
@@ -36,14 +38,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Store products in the session data
-    $products_data = serialize($_SESSION['cart']);
+    // Prepare products data for database insertion
+    $products_data = '';
+    foreach ($_SESSION['cart'] as $item) {
+        $product = $products[$item['product_id']];
+        $products_data .= $product['name'] . ' (Quantity: ' . $item['quantity'] . '), ';
+    }
+    $products_data = rtrim($products_data, ', '); // Remove trailing comma and space
 
     // Insert order information into the database
     $sql = "INSERT INTO orderonline (first_name, last_name, phone, email, address, payment_method, total, products) 
             VALUES ('$fname', '$lname', '$phone', '$email', '$address', '$payment_method', '$total', '$products_data')";
     
-    // Check if the query was successful
+    // Execute the query and handle errors
     if ($conn->query($sql) === TRUE) {
         // Display success message
         echo "Your order has been successfully submitted";

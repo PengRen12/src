@@ -24,9 +24,11 @@
         }
         .job h2, .application-form h2 {
             color: #333;
+            font-size:40px;
         }
         .job p, .application-form p {
             margin-bottom: 10px;
+            font-size:25px;
         }
         input[type="text"], input[type="email"], textarea {
             width: 100%;
@@ -65,16 +67,39 @@
         <button id="toggleDarkMode" style="padding:10px 20px; font-size:16px; cursor:pointer; margin-bottom: 20px;">Toggle Dark Mode</button>
         <div class="job">
             <h2>Position description</h2>
-            <p>Responsible for demand analysis, design and development of company projects.</p>
+            <p>As a key member of our software development team, you will play a crucial role in the demand analysis, design, 
+                and development of our company's projects. Your responsibilities will extend beyond mere coding; you'll be instrumental in 
+                shaping the future of our software solutions, ensuring they meet the evolving needs of our clients and the market.</p>
+
+            <p>Your day-to-day tasks will include engaging in detailed requirement analysis to understand the core objectives of our projects, 
+                designing scalable and robust software architectures, and implementing solutions with clean, efficient code. We value good programming habits highly, 
+                 expecting you to produce high-quality coding and conduct thorough unit testing to ensure functionality and reliability according 
+                 to our project specifications.</p>
+
+            <p>Effective communication is at the heart of our project management approach. You'll work closely with team members across different departments, from developers to designers and QA engineers, ensuring seamless project progress and maintaining the highest quality standards. Your ability to articulate ideas clearly and collaborate proactively will contribute significantly to our team's success.</p>
             <p>Have good programming habits and be able to complete high-quality coding and unit testing according to project requirements.</p>
             <p>Communicate effectively with team members to ensure project progress and quality.</p>
             
             <h2>Requirements</h2>
-            <p>Class of 2024 Bachelor degree or above</p>
-            <p>Good Coding Practices Clear</p>
-            <p>Familiar with Java, databases, master basic operations, familiar with network protocols, and master data structures.</p>
+            
+            <p>Educational Background: You must hold a Bachelor's degree or higher from the class of 2024. 
+                We value a strong academic foundation that prepares you for the challenges of software development.</p>
+<p>Coding Expertise: A clear understanding of good coding practices is essential. 
+    You should be adept at writing clean, maintainable code that adheres to industry standards and best practices.</p>
+<p>Technical Skills: Proficiency in Java is a must, along with a solid understanding of databases.
+     You should be comfortable with basic database operations and have a good grasp of network protocols. 
+     A strong foundation in data structures is also required, as it is crucial for developing efficient and scalable software.</p>
+<p>Analytical Skills: The ability to analyze and interpret complex requirements is key. 
+    You should be capable of translating business needs into technical specifications and developing solutions that address those needs effectively.</p>
+<p>Team Collaboration: We are looking for individuals who thrive in team settings. 
+    The ability to work collaboratively, share knowledge, and contribute positively to a team environment is critical for this role.</p>
+<p>Adaptability: The tech industry is ever-evolving, and so are its challenges. 
+    We need someone who is flexible, eager to learn new technologies, and can adapt to changing project requirements.</p>
+<p>This position offers the opportunity to work on exciting projects in a dynamic and supportive environment. If you are passionate about technology and have a commitment to excellence, we would love to hear from you.
+
+</p>
         </div>
-        <button onclick="location.href='index.php'" style="padding:10px 20px; font-size:16px; cursor:pointer;">Apply now</button>
+        <button onclick="location.href='index.php'" style="padding:10px 20px; font-size:35px; cursor:pointer;">Apply now</button>
     </div>
     <footer>
         <!-- Dynamic year will be inserted here -->

@@ -38,6 +38,7 @@
             margin: 0;
             padding: 0;
         }
+      
 
         section {
             text-align: center; /* Center-align text */
@@ -58,7 +59,7 @@
         }
 
         p {
-            font-size: 1.1em; /* Slightly larger paragraph text */
+            font-size: 25px; /* Slightly larger paragraph text */
             line-height: 1.6; /* Spacing for readability */
             color: #666; /* Dark gray for paragraphs for readability */
             max-width: 800px; /* Max width for optimal reading line length */
@@ -82,8 +83,9 @@
         width: 1; /* Adjust the width as needed */
         margin-top: 20px;
         border: 1px solid #ccc; /* Optional border */
-        padding: 300px;
+        padding: 150px;
         background-color: #fff; /* White background */
+        justify-content: center;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
     }
 
@@ -119,9 +121,18 @@
     </style>
 </head>
 <body>
+<div class="content-with-image">
+    <div class="text-content">
 <section class="company-introduction">
         <h1>Welcome to Our Company!</h1>
-        <p>Welcome to the exciting world of opportunities at Our Company. We're delighted that you're considering joining our team. At Our Company, we're dedicated to creating an inspiring, supportive, and inclusive environment where every team member feels valued and has the opportunity to contribute to our success.</p>
+        <p>Embrace the Serenity of Sip - Panda Milk Tea
+
+        Embrace the Serenity of Sip - Panda Milk Tea
+
+Welcome to Panda Milk Tea, 
+where every cup we serve is a story of tradition infused with innovation. Nestled in the heart of the city, 
+Panda Milk Tea is more than just a beverage brand; it's a sanctuary for tea enthusiasts and 
+a hub for those seeking a moment of peace in their bustling lives.</p>
     </section>
 
     <section class="position-details">
@@ -132,6 +143,11 @@
     <section class="how-to-apply">
         <h2>How to Apply</h2>
         <p>To apply for an open position, please fill out the form below with your personal and professional details. Ensure to provide accurate and up-to-date information to help us understand your qualifications and fit for the role. Our recruitment team will review your application and get in touch if your profile matches our requirements.</p>
+        <div class="image-container">
+        <!-- Insert your image here -->
+        <img src="image/pda.png" alt="pda">
+    </div>
+ 
     </section>
     <form method="post" action="process.php" id="myForm">
         <label for="email">Email Address:</label><br>
@@ -176,9 +192,11 @@
             <option value="female">Female</option>
             <!-- Additional gender options can be added here -->
         </select><br>
-
+        
+ 
         <input type="submit" value="Submit">
     </form>
+  
 </body>
 <section class="why-join-us">
         <h2>Why Join Us?</h2>

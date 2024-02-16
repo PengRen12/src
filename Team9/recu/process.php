@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'db.php';
 
  
-    $stmt = $conn->prepare("INSERT INTO job_applications (email, first_name, last_name, country_code, phone_number, country, gender) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO job_applications (email, first_name, last_name, country_code, phone_number, country, gender) 
+    VALUES (?, ?, ?, ?, ?, ?, ?)");
     
     
     $stmt->bind_param("sssssss", $email, $firstName, $lastName, $countryCode, $phoneNumber, $country, $gender);

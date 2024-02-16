@@ -17,7 +17,7 @@
             <a href="p.php">MENU</a>
             <a href="panda_house.php">VISIT US</a>
             <a href="connet/index.php">CONNECT US</a>
-            <a href="l.php" >Link</a>
+            <a href="recu.php" >RECRUIT</a>
          
       
         </div>

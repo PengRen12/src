@@ -1,31 +1,3 @@
-<?php
-$host = 'web23-db-1';  // Your database host
-$dbname = 'app1';  // Your database name
-$username = 'root';  // Your database username
-$password = 'password';  // Your database password
-
-// Create a connection
-$pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-// Check for POST request
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST['first_name'] ?? '';
-    $lastName = $_POST['last_name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $message = $_POST['message'] ?? '';
-
-    // Prepare SQL query
-    $query = "INSERT INTO contact_form (first_name, last_name, email, message) VALUES (?, ?, ?, ?)";
-    $stmt = $pdo->prepare($query);
-
-    // Execute the query
-    if ($stmt->execute([$firstName, $lastName, $email, $message])) {
-        echo "Message sent!";
-    } else {
-        echo "Error sending message.";
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">

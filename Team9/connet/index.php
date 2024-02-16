@@ -1,7 +1,10 @@
-<?php require_once 'header.php'; ?>
-<form method="post" action="process.php">
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -37,6 +40,15 @@
         background-color: #555;
     }
 </style>
+</head>
+<body>
+<?php require_once 'header.php'; ?>
+<div class="container">
+    <h1>CONTACT US</h1>
+    <p>If you have any questions or concerns you'd like to share with us, please fill out the form below.</p>
+    <p>This website is only affiliated with the New York and New Jersey stores only. If you need to reach out to any other locations, please contact them through their Instagram and Facebook. Thank you!</p>
+
+    <form method="post" action="process.php">
         <label for="first_name">First Name (required)</label><br>
         <input type="text" id="first_name" name="first_name" required><br>
         
@@ -50,6 +62,8 @@
         <textarea id="message" name="message" required></textarea><br>
         
         <button type="submit">Send</button>
-
-        <?php require_once 'footer.php'; ?>
     </form>
+</div>
+<?php require_once 'footer.php'; ?>
+</body>
+</html>

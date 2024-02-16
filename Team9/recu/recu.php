@@ -48,7 +48,7 @@
         input[type="submit"]:hover {
             background: #555;
         }
-        /* Dark mode styles */
+       
         .dark-mode {
             background-color: #333;
             color: #f4f4f4;
@@ -84,18 +84,18 @@
             
             <p>Educational Background: You must hold a Bachelor's degree or higher from the class of 2024. 
                 We value a strong academic foundation that prepares you for the challenges of software development.</p>
-<p>Coding Expertise: A clear understanding of good coding practices is essential. 
-    You should be adept at writing clean, maintainable code that adheres to industry standards and best practices.</p>
-<p>Technical Skills: Proficiency in Java is a must, along with a solid understanding of databases.
-     You should be comfortable with basic database operations and have a good grasp of network protocols. 
-     A strong foundation in data structures is also required, as it is crucial for developing efficient and scalable software.</p>
-<p>Analytical Skills: The ability to analyze and interpret complex requirements is key. 
-    You should be capable of translating business needs into technical specifications and developing solutions that address those needs effectively.</p>
-<p>Team Collaboration: We are looking for individuals who thrive in team settings. 
-    The ability to work collaboratively, share knowledge, and contribute positively to a team environment is critical for this role.</p>
-<p>Adaptability: The tech industry is ever-evolving, and so are its challenges. 
-    We need someone who is flexible, eager to learn new technologies, and can adapt to changing project requirements.</p>
-<p>This position offers the opportunity to work on exciting projects in a dynamic and supportive environment. If you are passionate about technology and have a commitment to excellence, we would love to hear from you.
+            <p>Coding Expertise: A clear understanding of good coding practices is essential. 
+                 You should be adept at writing clean, maintainable code that adheres to industry standards and best practices.</p>
+            <p>Technical Skills: Proficiency in Java is a must, along with a solid understanding of databases.
+                 You should be comfortable with basic database operations and have a good grasp of network protocols. 
+                 A strong foundation in data structures is also required, as it is crucial for developing efficient and scalable software.</p>
+            <p>Analytical Skills: The ability to analyze and interpret complex requirements is key. 
+                 You should be capable of translating business needs into technical specifications and developing solutions that address those needs effectively.</p>
+            <p>Team Collaboration: We are looking for individuals who thrive in team settings. 
+                The ability to work collaboratively, share knowledge, and contribute positively to a team environment is critical for this role.</p>
+            <p>Adaptability: The tech industry is ever-evolving, and so are its challenges. 
+                We need someone who is flexible, eager to learn new technologies, and can adapt to changing project requirements.</p>
+            <p>This position offers the opportunity to work on exciting projects in a dynamic and supportive environment. If you are passionate about technology and have a commitment to excellence, we would love to hear from you.
 
 </p>
         </div>
@@ -118,7 +118,7 @@
         
         function updateTime() {
             const now = new Date();
-            const timeString = now.toLocaleTimeString(); // Default locale's time
+            const timeString = now.toLocaleTimeString(); 
             footer.innerHTML = `<h3>&copy; ${now.getFullYear()}  Current Time: ${timeString}</h3>`;
         }
         setInterval(updateTime, 1000);

@@ -125,13 +125,13 @@ $conn->close();
     <script>
         function deleteUser(userId) {
             if(confirm("Are you sure you want to delete this user?")) {
-                // AJAX call to a PHP script for deleting a user
+                
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
-                       // Handle response here
+                       
                        console.log(this.responseText);
-                       // Refresh the user table to reflect the change
+                       
                        window.location.reload();
                     }
                 };

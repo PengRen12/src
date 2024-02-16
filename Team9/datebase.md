@@ -22,13 +22,15 @@ COMMIT;
 
 # table2 : Zhenliang Hao
 # Feature 2 : Feedback and suggestions
-CREATE TABLE `Feedback and suggestions` (
-  `id` int NOT NULL,
-  `Date` int NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `Phone Number` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 CO
 
+CREATE TABLE `contact_messages` (
+  `id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+COMMIT;
 
 
 

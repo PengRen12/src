@@ -38,15 +38,14 @@ CREATE TABLE `contact_messages` (
 # Feature3: Order Online
 CREATE TABLE `orderonline` (
   `id` int NOT NULL,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
+  `products` varchar(100) NOT NULL,
+  `fname` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `phone` varchar(20) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `payment_method` varchar(20) NOT NULL,
-  `total` decimal(10,2) NOT NULL,
-  `products` text NOT NULL
+  `address` varchar(100) NOT NULL,
+  `paymentmethod` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 
 

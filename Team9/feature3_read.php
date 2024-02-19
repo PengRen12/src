@@ -5,7 +5,7 @@ include 'feature3_db.php';
 ?>
 
 <style>
-    /* CSS样式用于设置表格边框 */
+   
     table {
         border-collapse: collapse;
         width: 100%;

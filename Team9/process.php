@@ -12,22 +12,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'db.php';
 
  
-    $stmt = $conn->prepare("INSERT INTO job_applications (email, first_name, last_name, country_code, phone_number, country, gender) 
-    VALUES (?, ?, ?, ?, ?, ?, ?)");
-    
-    
-    $stmt->bind_param("sssssss", $email, $firstName, $lastName, $countryCode, $phoneNumber, $country, $gender);
-
+   
+    $sql = "INSERT INTO job_applications (email, first_name, last_name, country_code, phone_number, country, gender) 
+    VALUES ('$email', '$firstName', '$lastName', '$countryCode', '$phoneNumber', '$country', '$gender')";
   
-    if ($stmt->execute()) {
-        echo "New record added";
-    } else {
-        echo "Error: " . $stmt->error;
-    }
+  if ($conn->query($sql) === TRUE) {
+    // Display success message
+    echo "Your order has been successfully submitted";
+} else {
+    // If there was an error in the query, display an error message
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-   
-    $stmt->close();
-   
-    $conn->close();
+// Close the database connection
+$conn->close();
 }
 ?>

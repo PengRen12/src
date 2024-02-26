@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'adminheader.php'; ?>
     <style>
   body {
     font-family: Arial, sans-serif;
@@ -85,6 +85,7 @@
                 <th>Phone_number</th>
                 <th>Country</th>
                 <th>Gender</th>
+                <th>Action</th>
                 
             </tr>
         </thead>
@@ -99,20 +100,22 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr>
-                <td>" . $row["id"] . "</td>
-                <td>" . $row["email"] . "</td>
-                <td>" . $row["first_name"] . " " . $row["last_name"] . "</td>
-                <td>" . $row["country"] . "</td>
-                <td>" . $row["phone_number"] . "</td>
-                <td>" . $row["country_code"] . "</td>
-                <td>" . $row["gender"] . "</td>
-                <td>
-                    <button onclick='deleteUser(" . $row["id"] . ")'>Delete</button>
-                </td>
-              </tr>";
+       
              
-
+              echo "<tr>
+              <td>" . $row["id"] . "</td>
+              <td>" . $row["email"] . "</td>
+              <td>" . $row["first_name"] . " " . $row["last_name"] . "</td>
+              <td>" . $row["country"] . "</td>
+              <td>" . $row["phone_number"] . "</td>
+              <td>" . $row["country_code"] . "</td>
+              <td>" . $row["gender"] . "</td>
+              <td>
+                  <button onclick='editUser(" . $row["id"] . ")'>Edit</button>
+                  <button onclick='deleteUser(" . $row["id"] . ")'>Delete</button>
+              </td>
+            </tr>";
+      
 
     }
 } else {
@@ -138,9 +141,18 @@ $conn->close();
                 xhttp.open("POST", "deleteUser.php", true);
                 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 xhttp.send("userId=" + userId);
+              
+
             }
         }
     </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    window.editUser = function(userId) {
+        window.location.href = "editUser.php?userId=" + userId;
+    };
+});
+</script>
     <?php require_once 'footer.php'; ?>
 </body>
 </html>

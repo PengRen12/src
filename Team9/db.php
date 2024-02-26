@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';  // Your database host
-$dbname = 'wp_peng23000';  // Your database name
-$username = 'peng23000';  // Your database username
-$password = '58eLWDw7';  // Your database password
+$host = 'web23-db-1';  // Your database host
+$dbname = 'app1';  // Your database name
+$username = 'root';  // Your database username
+$password = 'password';  // Your database password
 
 
 

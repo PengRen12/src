@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
        
    
     // Include the database connection file
-    include 'db.php';
+    include 'connetdb.php';
 
     // Define an SQL query to insert data into the 'studentsinfo' table
     $sql = "INSERT INTO contact_messages ( first_name,last_name, email, message)

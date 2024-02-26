@@ -1,7 +1,7 @@
 <?php require_once 'adminheader.php'; ?>
 <?php
 
-include 'db.php';
+include 'connetdb.php';
 
 
 if (isset($_GET['requestId'])) {

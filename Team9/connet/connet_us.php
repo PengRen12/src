@@ -62,7 +62,7 @@
     <p>If you have any questions or concerns you'd like to share with us, please fill out the form below.</p >
     <p>This website is only affiliated with the New York and New Jersey stores only. If you need to reach out to any other locations, please contact them through their Instagram and Facebook. Thank you!</p >
 
-    <form method="post" action="process.php">
+    <form method="post" action="connetprocess.php">
         <div style="text-align: left;"> <!-- Align labels and inputs to the left -->
             <label for="first_name">First Name (required)</label><br>
             <input type="text" id="first_name" name="first_name" required><br>

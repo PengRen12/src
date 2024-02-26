@@ -86,17 +86,17 @@
         </thead>
         <tbody>
         <?php
-include 'db.php'; // 引入数据库连接文件
+include 'connetdb.php'; 
 
-$sql = "SELECT id, email, first_name, last_name, message FROM contact_messages"; // 根据您的数据库表结构调整
+$sql = "SELECT id, email, first_name, last_name, message FROM contact_messages"; 
 $result = $conn->query($sql);
 
 if ($result === false) {
-    die("SQL query failed: " . $conn->error); // 直接终止脚本并打印错误信息
+    die("SQL query failed: " . $conn->error); 
 }
 
 if ($result->num_rows > 0) {
-    // 输出每一行数据
+    
     while($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>" . $row["id"] . "</td>
@@ -117,7 +117,7 @@ $conn->close();
         </tbody>
     </table>
     <script>
-    // 使用AJAX发送删除请求
+    
     function deleteRequest(requestId) {
         if(confirm("Are you sure you want to delete this request?")) {
             fetch('deleteContactRequest.php', {
@@ -130,14 +130,14 @@ $conn->close();
             .then(response => response.text())
             .then(data => {
                 console.log(data);
-                // 成功删除后刷新页面或从DOM中移除该行
+                
                 window.location.reload();
             })
             .catch(error => console.error('Error:', error));
         }
     }
 
-    // 保持编辑请求的跳转逻辑不变
+    /
     function editRequest(requestId) {
         window.location.href = "editContactRequest.php?requestId=" + requestId;
     }

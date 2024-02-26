@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; 
+include 'connetdb.php'; 
 
 
 if (isset($_POST['requestId'])) {
@@ -12,7 +12,7 @@ if (isset($_POST['requestId'])) {
     if ($stmt->execute()) {
         echo "Request deleted successfully.";
         
-        // header('Location: contactAdmin.php');
+        
     } else {
         echo "Error deleting request: " . $conn->error;
     }

@@ -86,7 +86,7 @@
         </thead>
         <tbody>
         <?php
-include 'db.php'; // 引入数据库连接文件
+include 'connetdb.php'; 
 
 $sql = "SELECT id, email, first_name, last_name, message FROM contact_messages"; // 根据您的数据库表结构调整
 $result = $conn->query($sql);

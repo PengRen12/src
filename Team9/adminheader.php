@@ -14,8 +14,8 @@
             <a href="p.html"><img src="image/logo2.png" alt="logo"></a>
         </div>
         <div class="nav-links">
-            <a href="contactAdmin.php" class="active">Contact</a>
-            <a href="Recruit_admin.php">Recruit</a>
+            <a href="contactAdmin.php" class="active">ContactAdmin</a>
+            <a href="Recruit_admin.php">RecruitAdmin</a>
             <a href="feature3_read.php">OrderAdmin</a>
             
             
